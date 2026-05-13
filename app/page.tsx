@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           {/* Headline — display serif, the moment */}
-          <h1 className="reveal reveal-2 font-serif font-light text-[44px] md:text-[88px] lg:text-[104px] leading-[0.98] tracking-tightest text-ink mb-10 md:mb-14 max-w-5xl">
+          <h1 className="reveal reveal-2 font-serif font-light text-[40px] md:text-[64px] lg:text-[80px] leading-[1.02] tracking-tightest text-ink mb-10 md:mb-14 max-w-4xl">
             Outbound built by{" "}
             <span className="italic font-normal text-accent-deep">operators</span>
             ,<br className="hidden md:block" /> not agencies.
@@ -49,9 +49,10 @@ export default function Home() {
 
           {/* Subhead */}
           <p className="reveal reveal-3 text-lg md:text-xl text-muted max-w-2xl mb-12 leading-[1.55]">
-            Managed B2B outbound for serious operators. Targeted lists, written
-            sequences, full deliverability — the same system we run across our
-            own portfolio of businesses, available to yours for{" "}
+            Managed B2B outbound for founders who want pipeline they can
+            actually count on. Targeted lists, written sequences, full
+            deliverability — the same system we run across our own portfolio
+            of businesses, available to yours for{" "}
             <span className="text-ink font-medium">£1,800 a month</span>.
           </p>
 
@@ -141,15 +142,15 @@ export default function Home() {
             A live sequence we built and are operating right now.
           </h2>
           <p className="text-muted text-lg max-w-2xl mb-16">
-            Caviar de Beluga — luxury food importer, sister business to Sales
-            Hype, full operator reference available. The same Apollo + HubSpot
-            stack we install for clients.
+            Caviar de Beluga — luxury food importer in the Sales Hype operating
+            portfolio. Director available as a reference. The same Apollo +
+            HubSpot stack we install for clients.
           </p>
 
           {/* Stats grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-rule border rule-soft">
             <div className="bg-paper-warm p-8 md:p-10">
-              <div className="font-serif font-light text-5xl md:text-7xl text-ink mb-3 tracking-tightest">
+              <div className="font-serif font-light text-4xl md:text-6xl text-ink mb-3 tracking-tightest">
                 2,815
               </div>
               <div className="text-xs uppercase tracking-[0.15em] text-muted font-medium">
@@ -157,7 +158,7 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-paper-warm p-8 md:p-10">
-              <div className="font-serif font-light text-5xl md:text-7xl text-ink mb-3 tracking-tightest">
+              <div className="font-serif font-light text-4xl md:text-6xl text-ink mb-3 tracking-tightest">
                 901
               </div>
               <div className="text-xs uppercase tracking-[0.15em] text-muted font-medium">
@@ -165,16 +166,16 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-paper-warm p-8 md:p-10">
-              <div className="font-serif font-light text-5xl md:text-7xl text-accent mb-3 tracking-tightest">
-                25.4<span className="text-3xl md:text-4xl">%</span>
+              <div className="font-serif font-light text-4xl md:text-6xl text-accent mb-3 tracking-tightest">
+                25.4<span className="text-2xl md:text-4xl">%</span>
               </div>
               <div className="text-xs uppercase tracking-[0.15em] text-muted font-medium">
                 Open rate
               </div>
             </div>
             <div className="bg-paper-warm p-8 md:p-10">
-              <div className="font-serif font-light text-5xl md:text-7xl text-accent mb-3 tracking-tightest">
-                5.1<span className="text-3xl md:text-4xl">%</span>
+              <div className="font-serif font-light text-4xl md:text-6xl text-accent mb-3 tracking-tightest">
+                5.1<span className="text-2xl md:text-4xl">%</span>
               </div>
               <div className="text-xs uppercase tracking-[0.15em] text-muted font-medium">
                 Reply rate
@@ -487,8 +488,8 @@ export default function Home() {
                 "You're looking for the cheapest possible option",
                 "You want growth-hacks rather than systems",
               ].map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span className="text-muted-light mt-2 flex-shrink-0">—</span>
+                <li key={item} className="flex gap-3 items-start">
+                  <span className="text-muted-light flex-shrink-0 leading-[1.55] select-none" aria-hidden="true">×</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -508,7 +509,7 @@ export default function Home() {
               </span>
             </div>
             <h2 className="font-serif font-light text-3xl md:text-5xl tracking-tightest leading-[1.05]">
-              Native English. Native Arabic. <span className="italic text-accent-deep">No translation gaps.</span>
+              Native English. Native Arabic. <span className="italic text-accent">No translation gaps.</span>
             </h2>
           </div>
           <div className="md:col-span-7 space-y-5 text-paper/80 text-[17px] leading-[1.7] md:pt-2">
@@ -702,7 +703,7 @@ export default function Home() {
 
           <h2 className="font-serif font-light text-4xl md:text-7xl tracking-tightest leading-[1.0] mb-10">
             Thirty minutes. <br/>
-            <span className="italic text-accent-deep">No pitch.</span>
+            <span className="italic text-accent">No pitch.</span>
           </h2>
 
           <p className="text-paper/75 text-lg max-w-xl mx-auto mb-12 leading-[1.6]">
