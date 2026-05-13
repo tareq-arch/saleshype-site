@@ -151,7 +151,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-rule border rule-soft">
             <div className="bg-paper-warm p-8 md:p-10">
               <div className="font-serif font-light text-4xl md:text-6xl text-ink mb-3 tracking-tightest">
-                2,815
+                528
               </div>
               <div className="text-xs uppercase tracking-[0.15em] text-muted font-medium">
                 Prospects contacted
