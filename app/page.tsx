@@ -771,7 +771,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-6xl mx-auto mt-10 pt-6 border-t rule-soft flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs text-muted-light">
-          <div>© 2026 Sales Hype Ltd. All rights reserved.</div>
+          <div>© 2023 Sales Hype Ltd. All rights reserved.</div>
           <div className="flex items-center gap-2 font-mono uppercase tracking-wider">
             <span>Built on HubSpot · Apollo</span>
           </div>
