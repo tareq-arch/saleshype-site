@@ -65,31 +65,37 @@ const seoLinks = [
   {
     href: "/b2b-outbound-lead-generation-uk",
     label: "B2B outbound lead generation UK",
+    shortLabel: "B2B outbound UK",
     text: "Managed outbound for founder-led UK B2B teams that need predictable pipeline.",
   },
   {
     href: "/managed-cold-email-uk",
     label: "Managed cold email UK",
+    shortLabel: "Managed cold email",
     text: "Cold email campaigns with list building, sequence writing, deliverability and reporting handled end to end.",
   },
   {
     href: "/cold-email-agency-uk",
     label: "Cold email agency UK",
+    shortLabel: "Cold email agency",
     text: "An operator-led alternative to generic agencies, built around Apollo, HubSpot and weekly pipeline movement.",
   },
   {
     href: "/apollo-hubspot-outbound",
     label: "Apollo and HubSpot outbound",
+    shortLabel: "Apollo + HubSpot",
     text: "How Sales Hype connects prospect data, sequences and CRM visibility into one outbound system.",
   },
   {
     href: "/gcc-lead-generation",
     label: "GCC lead generation",
+    shortLabel: "GCC lead generation",
     text: "UK and GCC outbound for businesses selling across Saudi Arabia, the UAE and wider Gulf markets.",
   },
   {
     href: "/cold-email-deliverability-checklist",
     label: "Cold email deliverability checklist",
+    shortLabel: "Deliverability checklist",
     text: "The setup checks that protect inbox placement before outbound campaigns go live.",
   },
 ];
@@ -222,6 +228,32 @@ const faqSchema = {
   ],
 };
 
+function TopServiceLinks() {
+  return (
+    <div className="relative z-20 bg-ink text-paper px-6 md:px-12 py-3 border-b border-paper/10">
+      <div className="max-w-6xl mx-auto flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+        <span className="text-[10px] uppercase tracking-[0.22em] text-accent font-semibold">
+          Services
+        </span>
+        <nav
+          aria-label="Sales Hype service pages"
+          className="flex gap-x-5 gap-y-2 overflow-x-auto text-xs md:text-sm text-paper/80 whitespace-nowrap"
+        >
+          {seoLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="hover:text-paper transition-colors duration-200"
+            >
+              {link.shortLabel}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </div>
+  );
+}
+
 function RelatedServiceLinks() {
   return (
     <section
@@ -285,6 +317,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <TopServiceLinks />
         {children}
         <RelatedServiceLinks />
         <SpeedInsights />
