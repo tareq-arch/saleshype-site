@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
@@ -59,6 +60,39 @@ export const metadata: Metadata = {
     ],
   },
 };
+
+const seoLinks = [
+  {
+    href: "/b2b-outbound-lead-generation-uk",
+    label: "B2B outbound lead generation UK",
+    text: "Managed outbound for founder-led UK B2B teams that need predictable pipeline.",
+  },
+  {
+    href: "/managed-cold-email-uk",
+    label: "Managed cold email UK",
+    text: "Cold email campaigns with list building, sequence writing, deliverability and reporting handled end to end.",
+  },
+  {
+    href: "/cold-email-agency-uk",
+    label: "Cold email agency UK",
+    text: "An operator-led alternative to generic agencies, built around Apollo, HubSpot and weekly pipeline movement.",
+  },
+  {
+    href: "/apollo-hubspot-outbound",
+    label: "Apollo and HubSpot outbound",
+    text: "How Sales Hype connects prospect data, sequences and CRM visibility into one outbound system.",
+  },
+  {
+    href: "/gcc-lead-generation",
+    label: "GCC lead generation",
+    text: "UK and GCC outbound for businesses selling across Saudi Arabia, the UAE and wider Gulf markets.",
+  },
+  {
+    href: "/cold-email-deliverability-checklist",
+    label: "Cold email deliverability checklist",
+    text: "The setup checks that protect inbox placement before outbound campaigns go live.",
+  },
+];
 
 // JSON-LD structured data — critical for AI search citation
 const organizationSchema = {
@@ -188,10 +222,45 @@ const faqSchema = {
   ],
 };
 
+function RelatedServiceLinks() {
+  return (
+    <section
+      aria-label="Related outbound services"
+      className="relative z-10 px-6 md:px-12 py-16 md:py-20 bg-paper-warm border-t rule-soft"
+    >
+      <div className="max-w-6xl mx-auto">
+        <div className="flex items-center gap-3 mb-8">
+          <div className="h-px w-10 bg-accent" />
+          <p className="text-[10px] uppercase tracking-[0.25em] text-accent font-semibold">
+            Related outbound services
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-px bg-rule border rule-soft">
+          {seoLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="bg-paper-warm p-6 md:p-7 block hover:bg-paper transition-colors duration-300"
+            >
+              <h2 className="font-serif text-xl md:text-2xl font-light tracking-tight text-ink mb-3">
+                {link.label}
+              </h2>
+              <p className="text-muted leading-[1.6] text-sm md:text-base">
+                {link.text}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <html lang="en-GB">
@@ -216,9 +285,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-  {children}
-  <SpeedInsights />
-</body>
+        {children}
+        <RelatedServiceLinks />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
