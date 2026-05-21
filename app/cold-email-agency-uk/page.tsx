@@ -20,9 +20,9 @@ export default function Page() {
         { title: "Operator-led execution", body: "Sales Hype is built by an operator running outbound across real businesses. The system sold to clients is the system used internally across the portfolio." },
         { title: "Clear offer, clear price", body: "GBP 1,800 per month, three-month minimum, no setup fee. The price includes lists, copy, domains, deliverability, management, HubSpot integration and weekly reporting." },
       ]}
-      bullets={["Built for B2B services with identifiable buyers.", "No cold outreach from your main domain.", "Apollo prospecting and list refreshes.", "Cold email sequences written and managed end to end.", "HubSpot routing for interested replies.", "Weekly reporting on what is working and what needs changing."]}
+      bullets={["Built for B2B services with identifiable buyers.", "Brand-safe outreach setup.", "Prospect data built with tools such as Apollo, Clay or ZoomInfo.", "Cold email sequences written and managed end to end.", "HubSpot routing for interested replies.", "Weekly reporting on what is working and what needs changing."]}
       faqs={[
-        { question: "How is Sales Hype different from a typical cold email agency?", answer: "Sales Hype is positioned as an operator-led outbound partner rather than a broad marketing agency. The focus is lists, cold email infrastructure, deliverability, HubSpot and weekly pipeline movement." },
+        { question: "How is Sales Hype different from a typical cold email agency?", answer: "Sales Hype is positioned as an operator-led outbound partner rather than a broad marketing agency. The focus is clean data, cold email infrastructure, deliverability, HubSpot and weekly pipeline movement." },
         { question: "Do you guarantee meetings?", answer: "Sales Hype does not promise fake certainty. The three-month minimum gives enough time to test targeting, offer and deliverability honestly. The work is measured by replies, meetings and pipeline quality." },
         { question: "What markets do you cover?", answer: "Sales Hype works across the UK, GCC and KSA, with English and Arabic capability." },
       ]}
