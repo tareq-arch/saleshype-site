@@ -165,69 +165,6 @@ const serviceSchema = {
   },
 };
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How is Sales Hype different from a marketing agency?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sales Hype is built by an operator running outbound across multiple B2B businesses. The systems we build for clients are the same systems we run ourselves. We are a HubSpot Solutions Partner focused only on outbound infrastructure and revenue operations — not branding, ads, or content marketing.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How much does B2B outbound lead generation cost in the UK?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sales Hype charges £1,800 per month with a three-month minimum commitment. This is a fully managed retainer including prospect list building, sequence copywriting, domain and deliverability setup, campaign management, and weekly reporting. There is no setup fee.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How long does outbound lead generation take to produce results?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Week one is onboarding and infrastructure setup. Week two launches the first sequences. First replies typically arrive within two to three weeks of launch. Meaningful pipeline begins month two as deliverability and targeting are optimised. Three months is the minimum window to evaluate.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What tools does Sales Hype use?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We build on HubSpot for CRM and pipeline visibility, and Apollo for prospect data and sequencing. We are a certified HubSpot Solutions Partner. We can integrate with existing stacks rather than forcing a rebuild.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you work with GCC and Saudi Arabia clients?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Sales Hype operates across the UK and GCC. Our founder is fluent in all Arabic dialects, and we have built native Arabic WhatsApp follow-up sequences inside HubSpot — particularly relevant for the Saudi market where WhatsApp is the primary business channel.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What if my outbound doesn't work after three months?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "If outbound is not generating meaningful pipeline after three months, we believe the targeting or offer is wrong — not the execution. We will run a free strategic review at month three to diagnose. No long-term lock-in beyond the initial three-month minimum.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you also build HubSpot CRM systems?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. As a HubSpot Solutions Partner we build full CRM and pipeline systems — typically as an add-on for outbound clients who need somewhere clean to land the leads they're generating. Available as a separate engagement for businesses that need the infrastructure first.",
-      },
-    },
-  ],
-};
-
 function TopServiceLinks() {
   return (
     <div className="relative z-20 bg-ink text-paper px-6 md:px-12 py-3 border-b border-paper/10">
@@ -307,12 +244,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(serviceSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
           }}
         />
       </head>
