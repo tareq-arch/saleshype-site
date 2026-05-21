@@ -79,7 +79,7 @@ export default function Home() {
           <div className="reveal reveal-5 mt-24 md:mt-32 pt-8 border-t rule-soft grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
             <div>
               <div className="text-[10px] uppercase tracking-[0.18em] text-muted-light mb-2">Built on</div>
-              <div className="text-sm text-ink font-medium">HubSpot · Apollo · Clay</div>
+              <div className="text-sm text-ink font-medium">HubSpot · Data tools · Enrichment</div>
             </div>
             <div>
               <div className="text-[10px] uppercase tracking-[0.18em] text-muted-light mb-2">Markets</div>
@@ -112,8 +112,9 @@ export default function Home() {
             <p>
               Sales Hype is a HubSpot Solutions Partner running managed outbound
               lead generation for B2B businesses in the UK and GCC. We build
-              targeted prospect lists in Apollo, write and operate cold email
-              sequences, manage deliverability and domain warming, and report
+              targeted prospect lists using tools such as Apollo, Clay or
+              ZoomInfo, write and operate cold email sequences, manage
+              deliverability and protected sending setup, and report
               weekly on pipeline movement — all for{" "}
               <span className="text-paper font-medium">£1,800 per month</span>,
               three-month minimum, no setup fee.
@@ -143,8 +144,8 @@ export default function Home() {
           </h2>
           <p className="text-muted text-lg max-w-2xl mb-16">
             Caviar de Beluga — luxury food importer in the Sales Hype operating
-            portfolio. Director available as a reference. The same Apollo +
-            HubSpot stack we install for clients.
+            portfolio. Director available as a reference. The same outbound
+            operating model we install for clients.
           </p>
 
           {/* Stats grid */}
@@ -275,7 +276,7 @@ export default function Home() {
               {
                 n: "01",
                 t: "Targeted prospect lists",
-                d: "Built in Apollo against your ideal customer profile. Verified contacts, decision-maker focus, fresh data refreshed monthly. Typically 500–1,500 prospects per cycle.",
+                d: "Built around your ideal customer profile using modern data and enrichment tools such as Apollo, Clay or ZoomInfo. Verified contacts, decision-maker focus, fresh data refreshed monthly. Typically 500–1,500 prospects per cycle.",
               },
               {
                 n: "02",
@@ -285,7 +286,7 @@ export default function Home() {
               {
                 n: "03",
                 t: "Domain & deliverability setup",
-                d: "Secondary sending domains, SPF/DKIM/DMARC, warm-up infrastructure. Your primary domain reputation stays protected. This is what most operators get wrong.",
+                d: "Protected sending setup, authentication, reputation controls and cautious volume management. Your primary brand reputation stays protected. This is what most operators get wrong.",
               },
               {
                 n: "04",
@@ -339,7 +340,7 @@ export default function Home() {
               {
                 w: "Week 1",
                 t: "Diagnose & build",
-                d: "30-minute scoping call. We map your ICP, write your messaging, build your Apollo lists, set up sending infrastructure and warm domains. You review and approve.",
+                d: "30-minute scoping call. We map your ICP, write your messaging, build prospect data, set up protected sending infrastructure and prepare the campaign. You review and approve.",
               },
               {
                 w: "Week 2",
@@ -405,7 +406,7 @@ export default function Home() {
 
             <div className="text-left max-w-md mx-auto space-y-3 mb-12 text-ink/80">
               {[
-                "Targeted Apollo prospect lists",
+                "Targeted prospect data",
                 "Full sequence copywriting",
                 "Domain & deliverability setup",
                 "Daily campaign management",
@@ -646,7 +647,7 @@ export default function Home() {
               },
               {
                 q: "How much does B2B outbound lead generation cost?",
-                a: "£1,800 per month, three-month minimum, no setup fee. This is a fully managed retainer including Apollo list building, sequence copywriting, domain warming and deliverability, daily campaign management, HubSpot integration and weekly reporting.",
+                a: "£1,800 per month, three-month minimum, no setup fee. This is a fully managed retainer including prospect data, sequence copywriting, protected sending setup and deliverability, daily campaign management, HubSpot integration and weekly reporting.",
               },
               {
                 q: "How long until I see results?",
@@ -654,7 +655,7 @@ export default function Home() {
               },
               {
                 q: "What tools do you use?",
-                a: "HubSpot for CRM and pipeline (we are a HubSpot Solutions Partner). Apollo for prospect data and sequencing. Custom-warmed domains for deliverability. We can integrate with most existing stacks rather than forcing a rebuild.",
+                a: "HubSpot for CRM and pipeline (we are a HubSpot Solutions Partner). For prospect data and enrichment we use tools such as Apollo, Clay, ZoomInfo and other sources depending on the market. We can integrate with most existing stacks rather than forcing a rebuild.",
               },
               {
                 q: "Do you work with GCC and Saudi Arabia?",
@@ -773,7 +774,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto mt-10 pt-6 border-t rule-soft flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs text-muted-light">
           <div>© 2023 Sales Hype Ltd. All rights reserved.</div>
           <div className="flex items-center gap-2 font-mono uppercase tracking-wider">
-            <span>Built on HubSpot · Apollo</span>
+            <span>Built on HubSpot · modern data tools</span>
           </div>
         </div>
       </footer>
