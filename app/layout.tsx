@@ -63,10 +63,28 @@ export const metadata: Metadata = {
 
 const seoLinks = [
   {
+    href: "/b2b-lead-generation-services",
+    label: "B2B lead generation services",
+    shortLabel: "B2B lead gen services",
+    text: "Managed B2B lead generation services for teams that need real pipeline, not activity reports.",
+  },
+  {
     href: "/b2b-outbound-lead-generation-uk",
     label: "B2B outbound lead generation UK",
     shortLabel: "B2B outbound UK",
     text: "Managed outbound for founder-led UK B2B teams that need predictable pipeline.",
+  },
+  {
+    href: "/outsourced-lead-generation",
+    label: "Outsourced lead generation",
+    shortLabel: "Outsourced lead gen",
+    text: "Outsourced outbound for B2B teams that want pipeline built before hiring internally.",
+  },
+  {
+    href: "/cold-email-agency",
+    label: "Cold email agency",
+    shortLabel: "Cold email agency",
+    text: "Managed cold email campaigns built around useful conversations and HubSpot visibility.",
   },
   {
     href: "/managed-cold-email-uk",
@@ -75,10 +93,10 @@ const seoLinks = [
     text: "Cold email campaigns with list building, sequence writing, deliverability and reporting handled end to end.",
   },
   {
-    href: "/cold-email-agency-uk",
-    label: "Cold email agency UK",
-    shortLabel: "Cold email agency",
-    text: "An operator-led alternative to generic agencies, built around clean data, HubSpot and weekly pipeline movement.",
+    href: "/hubspot-solutions-partner-uk",
+    label: "HubSpot Solutions Partner UK",
+    shortLabel: "HubSpot partner UK",
+    text: "HubSpot pipeline setup for outbound replies, sales ownership, follow-up and weekly reporting.",
   },
   {
     href: "/apollo-hubspot-outbound",
@@ -100,7 +118,7 @@ const seoLinks = [
   },
 ];
 
-// JSON-LD structured data — critical for AI search citation
+// JSON-LD structured data — critical for search and AI citation
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -134,6 +152,25 @@ const organizationSchema = {
     name: "HubSpot Solutions Partner",
     url: "https://ecosystem.hubspot.com/marketplace/solutions/sales-hype",
   },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Sales Hype",
+  url: "https://www.saleshype.co.uk",
+  email: "hello@saleshype.co.uk",
+  priceRange: "£1,800/month",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Apex House, 2nd Floor, Office 2a, Grand Arcade",
+    addressLocality: "North Finchley, London",
+    postalCode: "N12 0EH",
+    addressCountry: "GB",
+  },
+  areaServed: ["United Kingdom", "London", "GCC", "Saudi Arabia", "United Arab Emirates"],
+  description:
+    "Managed B2B outbound lead generation, cold email, HubSpot pipeline setup and GCC market outbound support.",
 };
 
 const serviceSchema = {
@@ -238,6 +275,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
           }}
         />
         <script
