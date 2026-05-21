@@ -94,9 +94,9 @@ const seoLinks = [
   },
   {
     href: "/cold-email-deliverability-checklist",
-    label: "Cold email deliverability checklist",
-    shortLabel: "Deliverability checklist",
-    text: "The setup checks that protect inbox placement before outbound campaigns go live.",
+    label: "Cold email deliverability review",
+    shortLabel: "Deliverability review",
+    text: "A diagnostic review of outbound infrastructure, inbox risk and campaign readiness before volume scales.",
   },
 ];
 
