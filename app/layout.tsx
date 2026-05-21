@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     template: "%s | Sales Hype",
   },
   description:
-    "Managed B2B outbound lead generation for £1,800/month. HubSpot Solutions Partner running targeted Apollo campaigns, written sequences and full deliverability — built by operators in the UK and GCC.",
+    "Managed B2B outbound lead generation for £1,800/month. HubSpot Solutions Partner running targeted campaigns, written sequences and full deliverability — built by operators in the UK and GCC.",
   keywords: [
     "outbound lead generation UK",
     "B2B lead generation UK",
     "managed cold email UK",
     "HubSpot Solutions Partner UK",
-    "Apollo lead generation",
+    "B2B prospect data tools",
     "B2B outbound services",
     "sales pipeline UK",
     "HubSpot CRM implementation",
@@ -78,13 +78,13 @@ const seoLinks = [
     href: "/cold-email-agency-uk",
     label: "Cold email agency UK",
     shortLabel: "Cold email agency",
-    text: "An operator-led alternative to generic agencies, built around Apollo, HubSpot and weekly pipeline movement.",
+    text: "An operator-led alternative to generic agencies, built around clean data, HubSpot and weekly pipeline movement.",
   },
   {
     href: "/apollo-hubspot-outbound",
-    label: "Apollo and HubSpot outbound",
-    shortLabel: "Apollo + HubSpot",
-    text: "How Sales Hype connects prospect data, sequences and CRM visibility into one outbound system.",
+    label: "Prospect data and HubSpot outbound",
+    shortLabel: "Data + HubSpot",
+    text: "How Sales Hype connects modern prospect data tools, sequences and CRM visibility into one outbound system.",
   },
   {
     href: "/gcc-lead-generation",
@@ -145,7 +145,7 @@ const serviceSchema = {
     name: "Sales Hype",
   },
   description:
-    "Managed B2B outbound lead generation including Apollo prospect list building, email sequence copywriting, domain warming, deliverability setup, full campaign management and weekly reporting.",
+    "Managed B2B outbound lead generation including prospect list building, email sequence copywriting, protected sending infrastructure, deliverability setup, full campaign management and weekly reporting.",
   areaServed: ["United Kingdom", "GCC", "United Arab Emirates", "Saudi Arabia"],
   offers: {
     "@type": "Offer",
